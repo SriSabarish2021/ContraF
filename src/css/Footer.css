@@ -447,3 +447,61 @@
     height: 20px;
   }
 }
+
+
+
+.privacy-policy{
+  height: 100dvh;
+  width: 100dvw;
+  background-color: rgba(212, 212, 212, 0.196);
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  top: 0px;
+  right: 0px;
+  transform: translateX(-100%);
+  transition-duration: 0.5s;
+}
+
+.show-main-policy-container{
+  transform: translateX(0px);
+  transition-duration: 0.5s;
+}
+.privacy-content{
+  height: 70dvh;
+  width: 60dvw;
+  background-color:#f3d28d;
+  border-radius: 20px;
+  padding: 40px;
+ 
+}
+.cont-inner{
+  height: 100%;
+  width: 100%;
+  padding:0px 0px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.policy-tit{
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+
+}
+
+.policy-tit-inner-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

@@ -11,6 +11,10 @@ const Footer = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
+  const Service=useRef(null)
+  const Privacy=useRef(null)
+
+  const refund=useRef(null)
 
   const quickLinks = [
     { label: 'Home', href: '#hero' },
@@ -83,6 +87,13 @@ const Footer = () => {
       setTimeout(() => setSubscribed(false), 3000);
     }
   };
+
+  let displaypolicy=(policy)=>{
+    policy.current.classList.add("show-main-policy-container");
+    console.log(policy.current);
+    
+    
+  }
 
   return (
     <footer className="footer" id="footer" ref={footerRef}>
@@ -207,7 +218,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-contact-content">
                   <h5>Address</h5>
-                  <p>123 Fashion Street, NY 10001</p>
+                  <p>Mettupalayam Road, Annur, Coimbatore</p>
                 </div>
               </div>
               <div className="footer-contact-item">
@@ -218,7 +229,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-contact-content">
                   <h5>Email</h5>
-                  <p>info@contraf.com</p>
+                  <p>contrafinternational@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -233,9 +244,9 @@ const Footer = () => {
             © 2025 <span>ContraF</span>. All rights reserved.
           </p>
           <div className="footer-legal">
-            <a href="#" className="footer-legal-link">Privacy Policy</a>
-            <a href="#" className="footer-legal-link">Terms of Service</a>
-            <a href="#" className="footer-legal-link">Cookies</a>
+            <a onClick={()=>displaypolicy(Privacy)} className="footer-legal-link">Privacy Policy</a>
+            <a ref={Service} onClick={()=>displaypolicy(Service)} className="footer-legal-link">Terms of Service</a>
+            <a ref={refund} onClick={()=>displaypolicy(refund)} className="footer-legal-link">Refund Policy</a>
           </div>
         </div>
       </div>
@@ -250,6 +261,59 @@ const Footer = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
         </svg>
       </button>
+      <div ref={Privacy} className='privacy-policy'>
+        <div className='privacy-content'>
+          <div className='cont-inner'>
+            <span className='policy-tit'>Privacy Policy</span>
+            <p className='policy-tit-inner-cont'>
+              <span>
+                Vetikaaran operates this website to provide you with a curated shopping experience. Our store is powered by Shopify. This Privacy Policy explains how we collect, use, and protect your personal information when you visit, use, or make a purchase from our website. By using our Services, you agree to this Privacy Policy.
+              </span>
+               
+
+              <span>We may collect personal information such as your name, billing and shipping address, phone number, email address, payment details, transaction history, account login details, items viewed or purchased, and any information you provide through customer support inquiries. We also automatically collect device information such as IP address, browser type, and browsing activity through cookies and similar technologies.</span>
+              
+              <span>We use your information to process orders, manage your account, complete payments, arrange shipping, handle returns, improve your shopping experience, send order updates, provide customer support, prevent fraud, ensure website security, and comply with legal requirements. We may also send promotional communications, and you can opt out at any time using the unsubscribe link in our emails.</span>
+              
+              <span>
+                We may share your information with Shopify, payment gateways, shipping partners, IT service providers, analytics providers, and marketing partners strictly to operate and improve our services. We do not sell your personal information. We may disclose information if required by law or to protect our legal rights. 
+              </span>
+
+              <span>
+                    Our website may contain links to third-party websites. We are not responsible for their privacy practices and encourage you to review their policies before sharing personal information. 
+              </span>
+
+              <span>
+                  We take reasonable security measures to protect your personal information. However, no online system is completely secure. We retain your information only as long as necessary to provide services, comply with legal obligations, and resolve disputes. 
+              </span>
+
+              <span>
+                Depending on your location, you may have rights to access, correct, delete, or request a copy of your personal information, and to opt out of marketing communications. To exercise these rights, please contact us using the details below.
+              </span>
+
+              <span>
+                Our services are not intended for children, and we do not knowingly collect personal information from minors. 
+              </span>
+
+              <span>
+                 We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated date
+              </span>
+
+             <span>
+              If you have any questions about this Privacy Policy or your personal information, please contact us at: 
+             </span>
+
+             <span>
+                  Email: vetikaaran@gmail.com<br></br>
+                  Address: Plot No: 69, Velmayil Garden, Pogalur, Annur to Mettupalayam Road, Coimbatore, Tamil Nadu – 641697, India 
+
+             </span>
+              
+            </p>
+          </div>
+          
+        </div>
+      </div>
     </footer>
   );
 };
