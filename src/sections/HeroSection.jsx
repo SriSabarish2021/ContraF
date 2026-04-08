@@ -60,11 +60,18 @@ const HeroSection = () => {
         { opacity: 1, duration: 0.6, ease: 'power2.out' },
         '-=0.3'
       );
-      
+      const statsview = gsap.timeline({
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'bottom 95%',
+          end: 'bottom 95%',
+          scrub: 1,
+        }
+      });
       // Stats bar animation
-      entranceTl.fromTo(statsRef.current,
+      statsview.fromTo(statsRef.current,
         { opacity: 0, y: '100%' },
-        { opacity: 1, y: 0, duration: 0.8, ease: 'power2.out' },
+        { opacity: 1, y: 0, duration: 2, ease: 'power2.out' },
         '-=0.3'
       );
       
@@ -143,8 +150,7 @@ const HeroSection = () => {
         
         {/* Description */}
         <p className="hero-description" ref={descriptionRef}>
-          ContraF brings you premium vests, shoes, jerkins, and innovative vending dress machines. 
-          Experience the perfect blend of convenience, tradition, and contemporary fashion.
+         From instant-wear traditional vesti to modular shoes, smart jackets, and dress vending machines, ContraF International brings the future of fashion to your everyday life.
         </p>
         
         {/* CTA Buttons */}

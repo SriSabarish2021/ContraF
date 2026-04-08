@@ -42,11 +42,19 @@
 /* Logo */
 .nav-logo {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: var(--space-2);
+  gap: 0px;
   z-index: 10;
 }
-
+.nav-international-text{
+  font-family: var(--font-accent);
+  font-size: 17px;
+  color: var(--medium-gray);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 .nav-logo-text {
   font-family: var(--font-heading);
   font-size: var(--text-2xl);

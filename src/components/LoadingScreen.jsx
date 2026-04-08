@@ -131,7 +131,7 @@ const LoadingScreen = ({ onComplete }) => {
         
         {/* Tagline */}
         <p className="loading-tagline" ref={taglineRef}>
-          Tradition Meets Fashion
+          International
         </p>
         
         {/* Progress Bar */}

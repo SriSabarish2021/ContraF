@@ -108,6 +108,7 @@ const Navigation = () => {
             <span className="nav-logo-text">
               Contra<span className="nav-logo-accent">F</span>
             </span>
+            <span className='nav-international-text'>International</span>
           </a>
           
           {/* Desktop Navigation Links */}

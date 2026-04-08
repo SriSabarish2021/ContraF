@@ -13,24 +13,24 @@ const VisionSection = () => {
 
   const timeline = [
     {
-      year: '2010',
+      year: '2024',
       title: 'The Beginning',
-      description: 'ContraF was founded with a vision to blend traditional craftsmanship with modern fashion.'
+      description: 'Founded with a vision to modernize traditional fashion and simplify everyday wear.'
     },
     {
-      year: '2015',
+      year: '2026',
       title: 'Expansion',
-      description: 'Opened our first international stores and expanded our product line to include shoes and jerkins.'
+      description: 'Introduced innovative footwear concepts and expanded into international markets.'
     },
     {
-      year: '2020',
+      year: '2026',
       title: 'Innovation',
-      description: 'Launched our revolutionary vending dress machines, changing how people access fashion.'
+      description: 'Launched the dress vending machine, transforming how people access clothing.'
     },
     {
       year: '2025',
       title: 'Global Reach',
-      description: 'Operating in 15+ countries with 25+ retail stores and a growing online presence.'
+      description: 'Expanding across multiple countries with cutting-edge fashion technology solutions.'
     }
   ];
 

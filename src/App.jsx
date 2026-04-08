@@ -36,10 +36,10 @@ function App() {
           <main>
             <HeroSection />
             <AboutSection />
-            <AchievementSection />
-            <ProductsSection />
             <MissionSection />
             <VisionSection />
+            <ProductsSection />
+            <AchievementSection />   
           </main>
           <Footer />
         </>

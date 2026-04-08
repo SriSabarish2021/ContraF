@@ -112,16 +112,13 @@ const MissionSection = () => {
         <div className="mission-content" ref={contentRef}>
           <p className="mission-subtitle">Our Mission</p>
           <h2 className="mission-title">
-            Empowering Style, <span>Enriching Lives</span>
+           Empowering Style, <span>Through Innovation</span>
           </h2>
           <p className="mission-description">
-            Our mission is to revolutionize the fashion industry by combining traditional craftsmanship 
-            with modern innovation. We strive to make premium fashion accessible while maintaining 
-            the highest standards of quality and sustainability.
+           Our mission is to redefine the fashion industry by combining technology, tradition, and sustainability. We aim to create products that are not just stylish, but also functional, time-saving, and future-ready.
           </p>
           <p className="mission-description">
-            Through our innovative vending dress machines and carefully curated collections, 
-            we're bringing convenience and style to every corner of the world.
+            We are committed to making premium fashion accessible, convenient, and adaptable for everyone.
           </p>
           
           {/* Mission Values */}
@@ -176,7 +173,7 @@ const MissionSection = () => {
             <p className="mission-quote-text">
               "Fashion is the armor to survive the reality of everyday life."
             </p>
-            <span className="mission-quote-author">— Bill Cunningham</span>
+            <span className="mission-quote-author">— Fazz Yousuf</span>
           </div>
         </div>
       </div>

@@ -136,7 +136,7 @@ const AboutSection = () => {
       <div className="about-header" ref={headerRef}>
         <p className="about-subtitle">About Us</p>
         <h2 className="about-title">
-          Crafting Fashion with <span>Passion</span> & Purpose
+          Crafting Future of <span> Fashion</span> with Purpose
         </h2>
       </div>
       
@@ -159,14 +159,10 @@ const AboutSection = () => {
         {/* Content Side */}
         <div className="about-content" ref={contentRef}>
           <p className="about-description">
-            At ContraF, we believe fashion is more than just clothing – it's an expression of identity, 
-            a blend of tradition and innovation. Since our inception, we've been dedicated to creating 
-            premium apparel that combines timeless craftsmanship with contemporary design.
+            At ContraF International, we believe fashion should be more than style — it should be smart, efficient, and accessible. Our mission is to bridge the gap between traditional wear and modern innovation, creating products that simplify everyday life.
           </p>
           <p className="about-description">
-            From our signature vests and stylish jerkins to our cutting-edge vending dress machines, 
-            we're revolutionizing how people experience fashion. Every piece we create tells a story 
-            of quality, comfort, and style.
+           From reinventing how a vesti is worn to introducing customizable footwear and on-demand clothing solutions, we are shaping a new era of fashion technology.
           </p>
           
           {/* Features Grid */}
